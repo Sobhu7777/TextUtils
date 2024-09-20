@@ -57,7 +57,7 @@ function App() {
   }
   return (
     <>
-    <Router> 
+    <HashRouter> 
     <Navbar title="TextUtils" home="Home" about="About" mode={darkmode} togglemode={darkclick} modetext={sign}  />
     {/* <Navbar/> */}
     <Alert1 msg={alert}/>
@@ -65,7 +65,7 @@ function App() {
           <Route path="/about" element={<About mystyle={modestyle}/>}/>
           <Route  exact path="/" element={<TextForm head="Enter the Text to Analyze" mystyle={modestyle}/>}/>
       </Routes>
-      </Router> 
+      </HashRouter> 
     </>
   );
 }
