@@ -6,7 +6,6 @@ import About from './components/About';
 import React, { useState } from 'react'
 import {
   BrowserRouter as Router,
-  HashRouter,
   Routes,
   Route,
   Link
@@ -58,7 +57,7 @@ function App() {
   }
   return (
     <>
-    <HashRouter> 
+    <Router> 
     <Navbar title="TextUtils" home="Home" about="About" mode={darkmode} togglemode={darkclick} modetext={sign}  />
     {/* <Navbar/> */}
     <Alert1 msg={alert}/>
@@ -66,7 +65,7 @@ function App() {
           <Route path="/about" element={<About mystyle={modestyle}/>}/>
           <Route  exact path="/" element={<TextForm head="Enter the Text to Analyze" mystyle={modestyle}/>}/>
       </Routes>
-      </HashRouter> 
+      </Router> 
     </>
   );
 }
