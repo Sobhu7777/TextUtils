@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css';
-
+// import { Link } from 'react-router-dom';
 export default function About(props) {
   return (
     <>
@@ -41,6 +41,7 @@ export default function About(props) {
                   <div>
                     <h2 className="h4 mb-3">Character Count and Word Count</h2>
                     <p className="text-secondary mb-0">Quickly assess the length of your text with accurate character and word count tools.</p>
+                    {/* <p><Link class="link-opacity-100" to="/any">Link opacity 100</Link></p> */}
                   </div>
                 </div>
               </div>

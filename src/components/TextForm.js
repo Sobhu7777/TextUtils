@@ -22,8 +22,6 @@ const textclearclick = ()=>{
   setText(newText)
 }
 const textcopyclick = ()=>{
-  var text=document.getElementById("myBox")
-  text.select()
   navigator.clipboard.writeText(text.value)
 }
     const textupchange = (event)=>{
@@ -43,11 +41,11 @@ const textcopyclick = ()=>{
       <div className="">
         <textarea className="form-control" id="myBox" rows="6" value={text} style={props.mystyle} onChange={textupchange}></textarea>
       </div>
-  <button  className="btn btn-primary mt-3 mx-1" onClick={textupclick}>UpperCase</button>
-  <button  className="btn btn-primary mt-3 mx-1" onClick={textloclick}>LowerCase</button>
-  <button  className="btn btn-primary mt-3 mx-1" onClick={textcapclick}>Capitalize first word</button>
-  <button  className="btn btn-primary mt-3 mx-1" onClick={textcopyclick}>Copy Text</button>
-  <button  className="btn btn-primary mt-3 mx-1" onClick={textclearclick}>Clear Text</button>
+  <button disabled={text.replace(/\s+/g,"").length===0} className="btn btn-primary mt-3 mx-1" onClick={textupclick}>UpperCase</button>
+  <button disabled={text.replace(/\s+/g,"").length===0} className="btn btn-primary mt-3 mx-1" onClick={textloclick}>LowerCase</button>
+  <button disabled={text.replace(/\s+/g,"").length===0} className="btn btn-primary mt-3 mx-1" onClick={textcapclick}>Capitalize first word</button>
+  <button disabled={text.replace(/\s+/g,"").length===0} className="btn btn-primary mt-3 mx-1" onClick={textcopyclick}>Copy Text</button>
+  <button disabled={text.replace(/\s+/g,"").length===0} className="btn btn-primary mt-3 mx-1" onClick={textclearclick}>Clear Text</button>
   
       </div>
       <div className="container my-3">

@@ -3,6 +3,7 @@ import Alert1 from './components/Alert1';
 import Navbar from './components/Navbar'; 
 import TextForm from './components/TextForm';
 import About from './components/About';
+// import Test1 from './components/Test1';
 import React, { useState } from 'react'
 import {
   BrowserRouter as Router, 
@@ -31,7 +32,7 @@ function App() {
 
   }
   const darkclick = ()=>{
-    console.log('black sheep')
+    // console.log('black sheep')
     if (darkmode==='light') {
       setdarkmode('dark')
       setmodestyle({
@@ -64,6 +65,7 @@ function App() {
       <Routes>
           <Route path="/about" element={<About mystyle={modestyle}/>}/>
           <Route  exact path="/" element={<TextForm head="Enter the Text to Analyze" mystyle={modestyle}/>}/>
+          {/* <Route path='/any' element={<Test1 macha="cool"/>}/> */}
       </Routes>
       </Router> 
     </>

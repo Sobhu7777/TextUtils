@@ -31,11 +31,11 @@ export default function Navbar(props) {
     </nav>
   );
 }
-Navbar.propTypes={
-  title:PropTypes.string.isRequired,
-  home:PropTypes.string.isRequired
-}
-Navbar.defaultProps={
-  title :'utils',
-  home: 'Home'
-}
+// Navbar.propTypes={
+//   title:PropTypes.string.isRequired,
+//   home:PropTypes.string.isRequired
+// }
+// Navbar.defaultProps={
+//   title :'utils',
+//   home: 'Home'
+// }
