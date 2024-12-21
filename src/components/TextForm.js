@@ -42,7 +42,7 @@ const textcopyclick = ()=>{
         <textarea className="form-control" id="myBox" rows="6" value={text} style={props.mystyle} onChange={textupchange}></textarea>
       </div>
   <button disabled={text.replace(/\s+/g,"").length===0} className="btn btn-primary mt-3 mx-1" onClick={textupclick}>UpperCase</button>
-  <button disabled={text.replace(/\s+/g,"").length===0} className="btn btn-primary mt-3 mx-1" onClick={textloclick}>LowerCase</button>
+  <button disabled={text.replace(/\s+/g,"").length===0} className="btn btn-primary mt-3 mx-1 " onClick={textloclick}>LowerCase</button>
   <button disabled={text.replace(/\s+/g,"").length===0} className="btn btn-primary mt-3 mx-1" onClick={textcapclick}>Capitalize first word</button>
   <button disabled={text.replace(/\s+/g,"").length===0} className="btn btn-primary mt-3 mx-1" onClick={textcopyclick}>Copy Text</button>
   <button disabled={text.replace(/\s+/g,"").length===0} className="btn btn-primary mt-3 mx-1" onClick={textclearclick}>Clear Text</button>
