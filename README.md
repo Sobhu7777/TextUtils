@@ -1,2 +1,7 @@
+# Getting Started with Create React App
 
-This website has been hosted on tiiny.host under the domain name "textutilsdotcom" 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Deployment
+
+The website was deployed on Vercel, you can navigate to the website by clicking on the following link [TextUtils](https://text-utils-two-umber.vercel.app)
